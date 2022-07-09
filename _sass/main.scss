@@ -1,9 +1,51 @@
-$backgroundColor: #ffffff;
+$backgroundColor: rgb(217, 232, 252);
 $bodyColor: #000000;
 $bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,body {
+  height: 100%;
+  width: 100%;
+}
 
 body {
   background: $backgroundColor;
   color: $bodyColor;
   font-family: $bodyFont;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Great Vibes';
+  font-size: 3.2rem;
+  color: #bba327;
+  margin-bottom: 1rem;
+}
+
+h1 + p {
+  font-family: 'Times New Roman', Times, serif;
+  color: #063c58;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 601px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h1 + p {
+    font-size: 1.5rem;
+  }
 }
