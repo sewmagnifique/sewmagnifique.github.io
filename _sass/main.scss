@@ -82,10 +82,11 @@ section {
   }
 }
 
-section p {
+section p, ul {
   text-align: center;
   color: $blueColor;
   font-size: 1rem;
+  margin-bottom: 1rem;
 }
 @media (min-width: 601px) {
   section p {
@@ -93,6 +94,9 @@ section p {
   }
 }
 
+section ul {
+  list-style-type: none;
+}
 .address {
   display: block;
   margin-top: 0.5em;
