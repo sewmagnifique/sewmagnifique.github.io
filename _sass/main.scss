@@ -1,8 +1,10 @@
-$backgroundColor: rgb(217, 232, 252);
+$backgroundColor: #d9e8fc;
 $bodyColor: #000000;
 $bodyFont: 'sans-serif';
 $goldColor: #bba327;
 $blueColor: #063c58;
+// $holidayBackColor:  #9fc9ff;
+$holidayBackColor:  #90b5e6;
 
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora&display=swap');
 
@@ -92,6 +94,15 @@ section p, ul {
   section p {
     font-size: 1.1rem;
   }
+}
+
+section p.holiday {
+  background-color: $holidayBackColor;
+  color: $blueColor;
+  border-radius: 10px;
+  padding: 1rem;
+  font-weight: bold;
+  box-shadow: 1px 1px 5px $blueColor;
 }
 
 section ul {
