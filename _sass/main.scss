@@ -41,7 +41,12 @@ main {
 }
 
 header {
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
+}
+@media (min-width: 601px) {
+  header {
+    margin-bottom: 6rem;
+  }
 }
 
 header h1 {
@@ -88,7 +93,7 @@ section p, ul {
   text-align: center;
   color: $blueColor;
   font-size: 1rem;
-  margin-bottom: 1rem;
+  // margin-bottom: 1rem;
 }
 @media (min-width: 601px) {
   section p {
